@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln Skyways</title>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<style>
+    body{
+        background-color: white;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    #navigation_bar , a, li{
+        margin: 0;
+        border-radius: 20px;
+        font-size: large;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        list-style-type: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 10px;
+        background-color: rgb(223, 217, 217);
+       
+        
+    }
+
+    li a:hover{
+        background-color: rgb(185, 29, 29);
+       
+    }
+    li a:active{
+        background-color: gold;
+    }
+
+    .swiper{
+        width: 70%;
+        height: fit-content;
+        border: 30%;
+    }
+
+    .swiper-slide img{ /* This adjust the img and slider to fit*/
+        width: 100%;
+
+    }
+
+    .motto{
+        color: maroon;
+        font-size: 100px;
+       /* box-shadow: 0 3px 3px ; */
+    }
+
+    .about_description{
+        left: 37px;
+        position: relative;
+        height: 215px;
+        width: 600px;
+        text-align: left;
+        padding: 20px;
+        animation-delay: 2s;
+        background-color: rgb(218, 218, 218);
+        font-size:medium;
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    }
+
+</style>
+
+<body>
+    <h1>Lincoln Skyways</h1>
+<ul>
+    <div id="navigation_bar">
+    <li> <a href="Lincoln_Skyways_About.html"> About </a></li>
+    <li> <a href="Lincoln_Skyways_Maintenance.html"> Maintenance </a></li>
+    <li> <a href="#"> Uhpolstery </a></li>
+    <li> <a href="#"> Aircraft Sales </a></li>
+    <li> <a href="#"> Flight School </a></li>
+    <li><a href="#"> Other Admenities </a></li>
+    </div>
+</ul>
+
+
+<div class="motto">
+<p>We keep you flying what you love to fly.</p>
+</div>
+
+<div class="image_slider">
+
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/LS_Plane_Images/182_Plane.jpg"></div>
+      <div class="swiper-slide"><img src="/LS_Plane_Images/414_Plane.jpg"></div>
+      <div class="swiper-slide"><img src="/LS_Plane_Images/A36_Plane.jpg"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  
+  </div>
+
+</div>
+
+
+    <div class="about_description">
+<p> Lincoln Skyways opened its doors in September of 1985. For 30 years, we have developed a reputation of honest, top-quality workmanship. 
+    Since our seasoned team has over 100 plus years of combined experience, you know you can count on us to get the job done right. 
+    Our integrity and professionalism has built a business known for our attention to detail. 
+    We take time with our customers to explain any needed repairs in a simple concise fashion. Good communication is one of our trademarks. 
+    At Lincoln Skyways, we have built a reputation by being a fair shop that proudly stands behind our work.
+    We work on most makes and models of aircraft, and we specialize in maintaining high performance twin and single engine aircraft. We are also a Cessna Service Center</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+});
+    </script>
+</body>
+</html>
